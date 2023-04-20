@@ -63,8 +63,8 @@ var toppings = [
   "anchovies",
 ];
 
-function randomRange(max, min) {
-  return Math.floor(Math.random() * max - min) - min;
+function randomRange(max) {
+  return Math.floor(Math.random() * max);
 }
 
 function randomPick(arr) {
@@ -78,10 +78,10 @@ function randomPizza() {
   pizza.sauceType = randomPick(sauceTypes);
   pizza.cheeses = [];
   pizza.toppings = [];
-  for (var i = 0; i < randomRange(5, 1); i++) {
+  for (var i = 0; i <= randomRange(3); i++) {
     pizza.cheeses.push(randomPick(cheeses));
   }
-  for (var i = 0; i < randomRange(4, 0); i++) {
+  for (var i = 0; i <= randomRange(4); i++) {
     pizza.toppings.push(randomPick(toppings));
   }
   return pizza;
