@@ -1,0 +1,125 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  /* outline: 1px dotted red; */
+}
+
+.container {
+  background-color: #245076;
+  color: whitesmoke;
+  width: 970px;
+  margin: 0 auto;
+  font-family: "Roboto", sans-serif;
+}
+header {
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+header img {
+  width: 250px;
+  height: 90px;
+}
+/* .right {
+  width: 200px;
+} */
+.text {
+  display: flex;
+  justify-content: center;
+}
+.text a {
+  color: yellow;
+  font-size: small;
+}
+.text span {
+  color: black;
+}
+.search {
+  background-color: #444;
+  padding: 15px 30px;
+  border-radius: 10px;
+  box-shadow: 2px 2px black;
+}
+input[type="search"] {
+  text-align: center;
+  height: 30px;
+}
+input[type="submit"] {
+  background-color: #245076;
+  border-radius: 5px;
+  width: 40px;
+  color: white;
+}
+.list {
+  margin: 0px 5px 0px 70px;
+  display: flex;
+  justify-content: space-between;
+  list-style-type: none;
+  padding: 10px 30px;
+  background-color: #467ead;
+  width: 800px;
+  border-radius: 5px;
+  box-shadow: 2px 2px black;
+}
+.maincontent {
+  display: flex;
+  justify-content: space-between;
+}
+.docs {
+  width: 200px;
+  margin: 30px 15px 60px 100px;
+  text-align: center;
+  list-style-type: none;
+  text-decoration: underline;
+  line-height: 1.6;
+}
+
+.content {
+  width: 670px;
+  margin: 15px 40px 0px 0px;
+  text-align: center;
+  line-height: 1;
+}
+span {
+  line-height: 1.8;
+  font-style: italic;
+  color: #e2c237;
+}
+.mainarticle {
+  width: 600px;
+  text-align: center;
+  background-color: white;
+  color: black;
+  padding: 10px 60px 15px 60px;
+}
+h4 {
+  border-top: 5px solid #6fa4d3;
+  line-height: 1.8;
+}
+.article {
+  display: flex;
+  justify-content: space-around;
+}
+article p span {
+  color: #8fb9dc;
+}
+article li {
+  color: #8fb9dc;
+}
+li::marker {
+  color: black;
+  list-style-type: none;
+}
+.footer {
+  display: flex;
+  justify-content: space-evenly;
+  font-size: 20px;
+  color: #5a8fbd;
+  margin: 50px 20px 20px 0px;
+}
+.copy {
+  display: flex;
+  font-size: 14px;
+  justify-content: center;
+  color: #5a8fbd;
+}
